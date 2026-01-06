@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ICL Notícias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOPO -->
+  <header class="top-bar">
+  <div class="menu-btn" id="openMenu">☰</div>
+
+  <div class="logo">
+    <img src="Assets/logo.png" alt="ICL Notícias">
+  </div>
+
+  <div class="actions">
+    <button class="btn">SEJA MEMBRO ICL</button>
+    <span class="search-btn" id="openSearch">🔍</span>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-header">
+    <span>MENU</span>
+    <span class="close" id="closeMenu">✕</span>
+  </div>
+
+  <nav>
+    <a href="#">COLUNISTAS</a>
+    <a href="#">POLÍTICA</a>
+    <a href="#">ECONOMIA</a>
+    <a href="#">SOCIEDADE</a>
+    <a href="#">PAÍS</a>
+    <a href="#">INTERNACIONAL</a>
+    <a href="#">CONHECIMENTO</a>
+    <a href="#">SENSACIONALISTA</a>
+    <a href="#">MEIO AMBIENTE</a>
+    <a href="#">MAIS</a>
+  </nav>
+</div>
+
+<!-- BUSCA -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <input type="text" placeholder="Buscar no ICL Notícias..." id="searchInput">
+    <button id="searchBtn">Buscar</button>
+  </div>
+</div>
+
+
+  <!-- MENU -->
+  <nav class="main-nav">
+    <a href="#">COLUNISTAS</a>
+    <a href="#">POLÍTICA</a>
+    <a href="#">ECONOMIA</a>
+    <a href="#">SOCIEDADE</a>
+    <a href="#">PAÍS</a>
+    <a href="#">INTERNACIONAL</a>
+    <a href="#">CONHECIMENTO</a>
+    <a href="#">SENSACIONALISTA</a>
+    <a href="#">MEIO AMBIENTE</a>
+    <a href="#">MAIS</a>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <main class="container">
+
+    <div class="live-bar">
+      🔴 AO VIVO
+      <span>MADURO PRESTA DEPOIMENTO EM NY E NEGA ACUSAÇÕES POR TRÁFICO</span>
+    </div>
+
+    <article class="news">
+      <span class="tag">CONHECIMENTO</span>
+
+      <h1>
+        Empresário investigado é solto após pagar fiança de mais de R$300.000
+      </h1>
+
+      <p class="subtitle">
+        Empresário é investigado por esquema milionário de lavagem de dinheiro com imóveis, fazendas e gado
+      </p>
+
+      <div class="meta">
+        18/07/2025 | 06h53
+      </div>
+
+      <div class="image">
+        <img src="Assets/noticia1.jpeg" alt="Manifestação">
+      </div>
+
+      <p class="noticia11">
+        O empresário Lucas Candido de Souza, investigado por envolvimento em um esquema milionário de lavagem de dinheiro, foi liberado após pagar uma fiança de R$350.000. A investigação aponta que Silva utilizava uma rede complexa de empresas para movimentar recursos provenientes de atividades ilícitas, incluindo a compra e venda de imóveis, fazendas e gado.
+    </article>
+
+  </main>
+
+  <!-- BANNER -->
+  <footer class="banner">
+    <strong>UM ANO DE MUITO ICL PRA VOCÊ</strong>
+  </footer>
+
+
+<!-- SCRIPTS -->
+<script>
+  // MENU
+  const openMenu = document.getElementById('openMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  openMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('open');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+  });
+
+  // SEARCH
+  const openSearch = document.getElementById('openSearch');
+  const searchOverlay = document.getElementById('searchOverlay');
+  const searchBtn = document.getElementById('searchBtn');
+  const searchInput = document.getElementById('searchInput');
+
+  openSearch.addEventListener('click', () => {
+    searchOverlay.classList.add('open');
+    searchInput.focus();
+  });
+
+  searchOverlay.addEventListener('click', (e) => {
+    if (e.target === searchOverlay) {
+      searchOverlay.classList.remove('open');
+    }
+  });
+
+  searchBtn.addEventListener('click', () => {
+    alert('Buscar por: ' + searchInput.value);
+  });
+
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      alert('Buscar por: ' + searchInput.value);
+    }
+  });
+</script>
+
+</body>
+</html>
