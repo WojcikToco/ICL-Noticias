@@ -112,7 +112,21 @@
   width: 100%;
   border-radius: 6px;
 }
-
+.noticia11 {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.noticia12 {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.noticia13 {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
 /* BANNER */
 .banner {
   background: #0b3c6f;
