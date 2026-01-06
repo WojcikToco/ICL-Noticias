@@ -112,18 +112,53 @@
   width: 100%;
   border-radius: 6px;
 }
+
 .noticia11 {
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.6;
 }
+
 .noticia12 {
   margin-top: 15px;
   font-size: 14px;
   line-height: 1.6;
 }
+
+.image3 img {
+  width: 50%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
 .noticia13 {
   margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.noticia14 {
+  margin-top: -490px;
+  margin-left: 410px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.noticia15 {
+  margin-top: 0px;
+  margin-left: 410px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.noticia16 {
+  margin-top: 15px;
+  margin-left: 410px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.noticia17 {
+ margin-top: 15px;
   font-size: 14px;
   line-height: 1.6;
 }
