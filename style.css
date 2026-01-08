@@ -125,12 +125,20 @@
   line-height: 1.6;
 }
 
-.image3 img {
-  width: 50%;
-  border-radius: 6px;
-  margin-top: 10px;
+.images {
+  display: flex;
+  gap: 20px; /* espaço entre as imagens */
+  align-items: flex-start;
 }
 
+.images img {
+  width: 100%;
+  max-width: 250px; /* ajuste como quiser */
+  height: auto;
+}
+.image3 img {
+  width: 150px;
+}
 .noticia13 {
   margin-top: 15px;
   font-size: 14px;
